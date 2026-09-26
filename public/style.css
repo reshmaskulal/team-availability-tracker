@@ -1,1 +1,152 @@
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.summary-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.available-card {
+    border-top: 5px solid #22c55e;
+}
+
+.busy-card {
+    border-top: 5px solid #ef4444;
+}
+
+.away-card {
+    border-top: 5px solid #f59e0b;
+}
+
+section h2 {
+    margin-bottom: 18px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.member-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.member-card h3 {
+    margin-bottom: 6px;
+}
+
+.role {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.status-Available {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-Busy {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.status-Away {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 9px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #e5e7eb;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.refresh-text {
+    text-align: center;
+    color: #777;
+    margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
